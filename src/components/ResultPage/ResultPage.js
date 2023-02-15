@@ -1,4 +1,3 @@
-
 import { useEffect, useState } from "react";
 import styles from "./ResultPage.module.css";
 import ResultList from "./Result_list";
@@ -6,6 +5,7 @@ import ResultList from "./Result_list";
 import OtherPopup from "./OtherPopup";
 import KakaoShareButton from "./KakaoShareButton";
 import UserNum from "./UserNum";
+import CallToAction from "./CallToAction";
 
 // import OtherResult from "./otherResult";
 const ResultPage = ({ frontResult, backResult }) => {
@@ -82,9 +82,9 @@ const ResultPage = ({ frontResult, backResult }) => {
 
         <div className={styles.footer} />
       </div>
+      <CallToAction />
     </div>
   );
-
 };
 
 export default ResultPage;

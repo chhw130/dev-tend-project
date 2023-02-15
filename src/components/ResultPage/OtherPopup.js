@@ -8,118 +8,48 @@ const OtherPopup = () => {
     setShowPopup(!showPopup);
   };
 
+  console.log(ResultList);
+
   return (
     <div>
       <div className={styles.popupBtn}>
         <button onClick={popupClick}>모든결과보기</button>
       </div>
-      {showPopup &&
+      {showPopup && (
         <div className={styles.popupOverlay}>
           <div className={styles.popupContent}>
             <div className={styles.content}>
-              {/* front */}
-              <p>
-                {ResultList["front"][0].TypeName}
-              </p>
-              {ResultList["front"][0].Describtion.split("/").map(des => {
+              {ResultList.back.map((back) => {
                 return (
-                  <p>
-                    {des}
-                  </p>
+                  <div key={back.type} className={styles.popupDiv}>
+                    <img src={back.img} className={styles.img} alt=""></img>
+                    <div>
+                      <div>{back.TypeName}</div>
+                      <div>{back.Describtion}</div>
+                    </div>
+                  </div>
                 );
               })}
-
-              <p>
-                {ResultList["front"][1].TypeName}
-              </p>
-
-              {ResultList["front"][1].Describtion.split("/").map(des => {
+              {ResultList.front.map((front) => {
                 return (
-                  <p>
-                    {des}
-                  </p>
+                  <div key={front.type} className={styles.popupDiv}>
+                    <img src={front.img} className={styles.img} alt=""></img>
+                    <div>
+                      <div>{front.TypeName}</div>
+                      <div>{front.Describtion}</div>
+                    </div>
+                  </div>
                 );
               })}
-
-              <p>
-                {ResultList["front"][2].TypeName}
-              </p>
-
-              {ResultList["front"][2].Describtion.split("/").map(des => {
+              {ResultList.full.map((full) => {
                 return (
-                  <p>
-                    {des}
-                  </p>
-                );
-              })}
-              {/* back */}
-              <p>
-                {ResultList["back"][0].TypeName}
-              </p>
-              {ResultList["back"][0].Describtion.split("/").map(des => {
-                return (
-                  <p>
-                    {des}
-                  </p>
-                );
-              })}
-
-              <p>
-                {ResultList["back"][1].TypeName}
-              </p>
-
-              {ResultList["back"][1].Describtion.split("/").map(des => {
-                return (
-                  <p>
-                    {des}
-                  </p>
-                );
-              })}
-
-              <p>
-                {ResultList["back"][2].TypeName}
-              </p>
-
-              {ResultList["back"][2].Describtion.split("/").map(des => {
-                return (
-                  <p>
-                    {des}
-                  </p>
-                );
-              })}
-              {/* full */}
-              <p>
-                {ResultList["full"][0].TypeName}
-              </p>
-              {ResultList["full"][0].Describtion.split("/").map(des => {
-                return (
-                  <p>
-                    {des}
-                  </p>
-                );
-              })}
-
-              <p>
-                {ResultList["full"][1].TypeName}
-              </p>
-
-              {ResultList["full"][1].Describtion.split("/").map(des => {
-                return (
-                  <p>
-                    {des}
-                  </p>
-                );
-              })}
-
-              <p>
-                {ResultList["full"][2].TypeName}
-              </p>
-
-              {ResultList["full"][2].Describtion.split("/").map(des => {
-                return (
-                  <p>
-                    {des}
-                  </p>
+                  <div key={full.type} className={styles.popupDiv}>
+                    <img src={full.img} className={styles.img} alt=""></img>
+                    <div>
+                      <div>{full.TypeName}</div>
+                      <div>{full.Describtion}</div>
+                    </div>
+                  </div>
                 );
               })}
             </div>
@@ -133,7 +63,8 @@ const OtherPopup = () => {
               </button>
             </a>
           </div>
-        </div>}
+        </div>
+      )}
     </div>
   );
 };

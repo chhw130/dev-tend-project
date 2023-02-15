@@ -45,7 +45,7 @@
 }
 
 /* 모바일 */
-@media (max-width: 360px) {
+@media (max-width: 768spx) {
   .ResultBg {
     background-position: 55%;
   }

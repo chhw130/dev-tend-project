@@ -5,7 +5,6 @@ import styled from "styled-components";
 const Question = ({ d }) => {
   return (
     <>
-
       {d.question[0].includes("imageData") ? (
         <>
           <div>{d.question[1]}</div>
@@ -14,7 +13,6 @@ const Question = ({ d }) => {
             className={styles.questionImg}
             alt=""
           />
-
         </>
       ) : (
         <div className={styles.question}>{d.question}</div>

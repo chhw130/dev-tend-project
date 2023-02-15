@@ -140,7 +140,6 @@ function App() {
 
       question: ["/imageData/img3.jpg", "빈칸에 들어갈 말로 옳은 것은?!"],
 
-
       answerData: [
         {
           answer: "1. 쯧쯧쯧,,, 세금 낭비",
@@ -228,9 +227,7 @@ function App() {
       question: "다음 단어를 보고 생각나는 이미지를 고르세요.\n<코드>",
       answerData: [
         {
-
           answer: "/imageData/img4.jpeg",
-
 
           type: "0",
         },
@@ -254,7 +251,6 @@ function App() {
         "개발자가 다음 영단어를 보고 먼저 떠오르는 것이 바르게 연결된 것은??",
       answerData: [
         {
-
           answer: "/imageData/img8.jpeg",
 
           type: "0",
@@ -324,27 +320,21 @@ function App() {
       question: "나의 모습과 가장 가까운 이미지를 고르세요.",
       answerData: [
         {
-
           answer: "/imageData/img12.jpeg",
-
 
           type: "1",
         },
         {
-
           answer: "/imageData/img13.jpeg",
           type: "1",
         },
         {
           answer: "/imageData/img14.jpeg",
 
-
           type: "1",
         },
         {
-
           answer: "/imageData/img15.jpeg",
-
 
           type: "1",
         },

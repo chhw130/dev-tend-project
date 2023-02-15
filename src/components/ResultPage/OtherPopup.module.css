@@ -9,14 +9,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  
 }
 .popupContent {
+  display: flex;
+  flex-direction: column;
   background-color: white;
-  height: 500px;
-  padding: 20px;
+  width: 70vw;
+  height: 80vh;
+  padding: 30px;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(255, 191, 101, 0.792);
+  box-shadow: 0 0 10px rgba(255, 101, 122, 0.792);
   font-size: 1rem;
   letter-spacing: 1px;
   overflow-y: scroll;
@@ -30,18 +32,18 @@
   margin: 0 auto;
   margin-bottom: 13px;
   padding: 3px 15px;
-  background: #ffaa40;
+  background: #cfacfb;
   font-family: "NexonMaplestory";
   color: #fff;
-  text-shadow: 2px 2px 3px rgb(172, 86, 0);
-  box-shadow: 0px 5px 0px 0px #a66615;
+  text-shadow: 2px 2px 3px rgb(115, 0, 172);
+  box-shadow: 0px 5px 0px 0px #6215a6;
   border-radius: 5px;
   transition: all 0.2s;
 }
 .popupContent .startBtn button:hover {
   margin-top: 10px;
   margin-bottom: 3px;
-  box-shadow: 0px 0px 0px 0px #a66615;
+  box-shadow: 0px 0px 0px 0px #6215a6;
   cursor: pointer;
 }
 
@@ -97,9 +99,63 @@
   top: 2px;
 }
 
+/* 새로 추가한 데이터 */
+
+.popupDiv {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  border-top: 1px solid #b5b5b5;
+}
+
+.img {
+  width: 20vw;
+  height: 30vh;
+  border-radius: 2px;
+  box-shadow: 2px 2px 5px #7e7e7ec7;
+  margin: 20px;
+}
+
+.popupDiv div:first-child {
+  margin-bottom: 30px;
+  text-align: center;
+  font-family: "NexonMaplestory";
+}
+.popupDiv div {
+  margin-left: 10px;
+  text-align: start;
+  font-family: "NexonMaplestory";
+  font-size: 1em;
+}
+
 /* 모바일 */
-@media (max-width: 360px) {
+@media (max-width: 768px) {
   .popupBtn {
     justify-content: center;
+  }
+
+  .content {
+    margin: 2px;
+  }
+
+  .popupDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    border-top: 1px solid #b5b5b5;
+    font-size: 0.5em;
+  }
+
+  .popupDiv div {
+    margin: 0;
+  }
+
+  .img {
+    width: 40vw;
+    height: 30vh;
+    border-radius: 2px;
+    box-shadow: 2px 2px 5px #7e7e7ec7;
+    margin: 20px;
   }
 }

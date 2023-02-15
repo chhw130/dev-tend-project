@@ -1,0 +1,17 @@
+.callToActionDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 20px;
+}
+
+.callToActionDiv input {
+  background-color: cornflowerblue;
+  color: white;
+  width: 30vw;
+  height: 10vh;
+  margin-top: 15px;
+  border-radius: 10px;
+}
