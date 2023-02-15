@@ -1,0 +1,74 @@
+.ResultBg {
+  width: 100vw;
+  /* background-image: url(../../contents/images/result_bg.png); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 80%;
+  justify-content: center;
+}
+.ResultContents {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 750px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 6.25rem 0;
+}
+.ResultTitle {
+  font-family: "NexonMaplestory";
+  font-weight: bold;
+  font-size: 3.125rem;
+  text-shadow: 2px 2px 3px rgb(255, 255, 255);
+  padding-top: 50px;
+}
+.ResultText {
+  font-family: "NexonLv2Gothic";
+  letter-spacing: 0.0625rem;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-bottom: 100px;
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.439);
+  border-radius: 10px;
+}
+.ResultText p {
+  margin: 3px 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+}
+
+/* 모바일 */
+@media (max-width: 360px) {
+  .ResultBg {
+    background-position: 55%;
+  }
+  .ResultContents {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+  }
+  .ResultTitle {
+    font-size: 1.875rem;
+    padding: 50px 40px;
+    width: 100vw;
+    letter-spacing: 1px;
+  }
+  .ResultText {
+    font-size: 0.75rem;
+    width: 80vw;
+    background-color: rgba(255, 255, 255, 0.439);
+    border-radius: 5px;
+    padding: 10px 0;
+    color: rgb(0, 0, 0);
+    font-weight: 400;
+  }
+}

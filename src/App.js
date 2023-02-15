@@ -26,7 +26,9 @@ function App() {
     },
     {
       id: 2,
-      question: ["/heart.png", "안녕하세요"],
+
+      question: ["/imageData/img1.png", "하트의 위치는 몇번째인가??"],
+
       answerData: [
         {
           answer: "i=1",
@@ -51,7 +53,9 @@ function App() {
     },
     {
       id: 4,
-      question: "/imageData/img2.png",
+
+      question: ["/imageData/img2.png", "다음 빈칸에 들어갈 말은?!"],
+
       answerData: [
         {
           answer: "1. HTML",
@@ -133,7 +137,9 @@ function App() {
     },
     {
       id: 10,
-      question: "/imageData/img3.png",
+
+      question: ["/imageData/img3.jpg", "빈칸에 들어갈 말로 옳은 것은?!"],
+
 
       answerData: [
         {
@@ -222,7 +228,9 @@ function App() {
       question: "다음 단어를 보고 생각나는 이미지를 고르세요.\n<코드>",
       answerData: [
         {
-          answer: "/imageData/img4.png",
+
+          answer: "/imageData/img4.jpeg",
+
 
           type: "0",
         },
@@ -246,7 +254,9 @@ function App() {
         "개발자가 다음 영단어를 보고 먼저 떠오르는 것이 바르게 연결된 것은??",
       answerData: [
         {
-          answer: "/imageData/img8.png",
+
+          answer: "/imageData/img8.jpeg",
+
           type: "0",
         },
         {
@@ -314,21 +324,27 @@ function App() {
       question: "나의 모습과 가장 가까운 이미지를 고르세요.",
       answerData: [
         {
-          answer: "/imageData/img12.png",
+
+          answer: "/imageData/img12.jpeg",
+
 
           type: "1",
         },
         {
-          answer: "/imageData/img13.png",
+
+          answer: "/imageData/img13.jpeg",
           type: "1",
         },
         {
-          answer: "/imageData/img14.png",
+          answer: "/imageData/img14.jpeg",
+
 
           type: "1",
         },
         {
-          answer: "/imageData/img15.png",
+
+          answer: "/imageData/img15.jpeg",
+
 
           type: "1",
         },
@@ -383,7 +399,12 @@ function App() {
 
           {/* result(진행도)가 10일때 결과페이지 보여주기  */}
           {result === Data.length ? (
-            <Route path="/test" element={<ResultPage />} />
+            <Route
+              path="/test"
+              element={
+                <ResultPage frontResult={frontResult} backResult={backResult} />
+              }
+            />
           ) : (
             false
           )}

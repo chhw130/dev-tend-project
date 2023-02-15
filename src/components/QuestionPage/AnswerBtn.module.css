@@ -1,24 +1,30 @@
 .answerButton {
-  height: 5em;
-  width: 35vw;
+  max-width: 50rem;
+  width: 800px;
   border: 0;
-  margin: 2vh 1em 2vh 1em;
-  background-color: burlywood;
-  color: #fff;
-  opacity: 98%;
-  font-size: 20px;
-  background-color: #89d8d3;
-  font-family: "NexonMaplestory";
-  color: #fff;
-  text-shadow: 2px 2px 3px rgb(172, 86, 0);
-  box-shadow: 0px 2px 0px 0px #a66615;
-  border-radius: 5px;
-  transition: all 0.2s;
+
+  /* margin: 1.875rem auto; */
+  /* width: 35vw;
+  height: 5vh; */
+  padding: 50px;
+  margin: 1%;
+  margin-bottom: 3%;
+  color: #000;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-size: 1.875rem;
+  font-family: "Jua";
+  letter-spacing: 1.5px;
+  box-shadow: 0 0 0 1px #f3d48b inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset,
+    0 15px 0 0 #7c563f, 0 15px 0 1px rgba(0, 0, 0, 0.4),
+    0 15px 15px 1px rgba(0, 0, 0, 0.5);
+  background-color: #f2d388;
+
 }
 
 .answerButton:hover {
-  color: #000;
-  background-color: #ff58b8;
+  color: rgb(227, 232, 251);
+  background-color: #c98474;
 }
 
 .answerImg {
@@ -38,7 +44,6 @@
   }
   .answerImg {
     margin: 1em 1em 1em 1em;
-
     width: 30vw;
     height: 25vh;
   }

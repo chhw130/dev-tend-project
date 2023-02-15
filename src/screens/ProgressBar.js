@@ -1,21 +1,14 @@
 import styled from "styled-components";
 import horse from "../contents/images/horse.png";
 
-const ProgressHeader = styled.header`
-  position: fixed;
-  top: 0;
-  z-index: 1;
-  width: 100%;
-  background-color: #f1f1f1;
-`;
-
 const ProgressContainer = styled.div`
-  margin-top: 30px;
+  margin-top: 35px;
   position: absolute;
   width: 70vw;
   height: 3vh;
   border-radius: 10px;
-  background-color: rgb(255, 212, 215);
+  background-color: #80cbc4;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
   left: 14.6%;
   z-index: 99;
 `;
@@ -36,12 +29,13 @@ const Progress = styled.span`
 `;
 
 const ProgressImg = styled.p`
-  margin-top: 10px;
+  margin-top: 12px;
   text-align: center;
   font-size: 24px;
   font-weight: bolder;
-
   color: white;
+  font-family: "Ansungtangmyun";
+  text-shadow: 1px 1px 4px rgb(40, 40, 40);
 `;
 
 const ProgressBar = ({ result, data }) => {
@@ -49,13 +43,11 @@ const ProgressBar = ({ result, data }) => {
   const barWidth = result;
 
   return (
-    <ProgressHeader>
-      <ProgressContainer>
-        <Progress width={(barWidth / data.length) * 100 + "%"}>
-          <ProgressImg>{barWidth}</ProgressImg>
-        </Progress>
-      </ProgressContainer>
-    </ProgressHeader>
+    <ProgressContainer>
+      <Progress width={(barWidth / data.length) * 100 + "%"}>
+        <ProgressImg>{barWidth}</ProgressImg>
+      </Progress>
+    </ProgressContainer>
   );
 };
 

@@ -11,7 +11,7 @@ function Main() {
         <div className={styles.mainText}>
           <p>개발에 대해 한번이라도 관심을 가져본적이 있나요?</p>
           <p>개발자에 대해 얼마나, 어디까지 알고 있나요?</p>
-          <p>이미 나는 개발 공부를 하고 있다면?!</p>
+          <p>혹시 이미 개발 공부를 하고 있다면,</p>
           <p>개발세계의 밈, 트렌드에 대해 얼마나 알고 있나요?</p>
         </div>
         <div className={styles.footer}>

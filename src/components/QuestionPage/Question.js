@@ -5,14 +5,16 @@ import styled from "styled-components";
 const Question = ({ d }) => {
   return (
     <>
-      {d.question[0].includes("png") ? (
+
+      {d.question[0].includes("imageData") ? (
         <>
+          <div>{d.question[1]}</div>
           <img
             src={process.env.PUBLIC_URL + d.question[0]}
-            alt=""
             className={styles.questionImg}
+            alt=""
           />
-          <div>{d.question[1]}</div>
+
         </>
       ) : (
         <div className={styles.question}>{d.question}</div>

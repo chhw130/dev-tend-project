@@ -1,17 +1,18 @@
 .question {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  padding: 100px 0;
   text-align: center;
   width: 65vw;
-  height: 30vh;
-  font-size: 2em;
-  margin: 15vh 0 9vh 0;
-  padding: 1em;
-  background-color: aliceblue;
-  box-shadow: rgb(175 175 175) 5px 5px 20px;
+
+  height: 20%;
+  font-size: 2.5rem;
+  margin: 8vh 0;
+  padding: 2rem;
+  background-color: #f7f5eb;
+  border: 7px solid #65789a;
+
   border-radius: 20px;
-  opacity: 95%;
+  font-family: "Jua";
+  letter-spacing: 1.5px;
 }
 
 .questionImg {

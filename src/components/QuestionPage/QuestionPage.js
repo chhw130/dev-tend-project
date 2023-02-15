@@ -49,17 +49,22 @@ const QuestionPage = ({ data, tendencyData }) => {
   console.log(data);
 
   return (
-    <>
-      {/* 뒤로가기 버튼 */}
-      <Link to="/">
-        <input className={styles.goMainBtn} type="button" value="Go Main" />
-      </Link>
+    <div className={styles.questionPage}>
+      {/* 메인이동 버튼 */}
+      <header className={styles.header}>
+        <Link to="/">
+          <a href="" title="Go to Main" className={styles.goMainBtn}>
+            <span className={styles.goMainBtnTop}>Main</span>
+            <span className={styles.goMainBtnBottom}>처음부터!</span>
+          </a>
+        </Link>
+      </header>
 
       {/* 질문페이지 구현 */}
-      <ol className={styles.questionPage}>
+      <section className={styles.question}>
         {data.map((d) => {
           return (
-            <li className={styles.questionBox} key={d.id}>
+            <div className={styles.questionBox} key={d.id}>
               <Question d={d} />
               {/* 응답 버튼 */}
               <div className={styles.lists}>
@@ -73,11 +78,11 @@ const QuestionPage = ({ data, tendencyData }) => {
                   );
                 })}
               </div>
-            </li>
+            </div>
           );
         })}
-      </ol>
-    </>
+      </section>
+    </div>
   );
 };
 
