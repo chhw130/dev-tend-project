@@ -8,8 +8,6 @@ const OtherPopup = () => {
     setShowPopup(!showPopup);
   };
 
-  console.log(ResultList);
-
   return (
     <div>
       <div className={styles.popupBtn}>
